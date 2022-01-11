@@ -35,18 +35,21 @@ public class RunSystem {
                     break;
                 case 3:
                     System.out.print("Nhập Vào Số Điện Thoại");
+                    scanner.nextLine();
                     String s = scanner.nextLine();
                     managerContact.editContact(s);
                     System.out.println(s);
                     break;
                 case 4:
                     System.out.print("Nhập Số Điện Thoại : ");
+                    scanner.nextLine();
                     String s1 = scanner.nextLine();
                     managerContact.deleteContact(s1);
                     System.out.println(s1);
                     break;
                 case 5:
                     System.out.print("Nhập Tên Muốn Tìm : ");
+                    scanner.nextLine();
                     String name = scanner.nextLine();
                     ArrayList<Contact> s2 = managerContact.searchContact(name);
                     System.out.println(s2);
